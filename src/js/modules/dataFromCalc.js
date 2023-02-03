@@ -46,7 +46,6 @@ const dataFromCalc = (state) => {
         checkboxWindow.forEach((item) => {
             item.addEventListener('change', (e) => {
                 state[window] = item.nextElementSibling.id;
-                console.log(state);
             });
         });
     }

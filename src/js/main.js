@@ -5,6 +5,7 @@ import forms from './modules/forms';
 import timer from './modules/timer';
 import checkNumInputs from './modules/checkNumInputs';
 import dataFromCalc from './modules/dataFromCalc';
+import images from './modules/images';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -19,5 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     forms(dataState);
     timer();
     dataFromCalc(dataState);
+    images();
 });
 
