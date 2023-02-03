@@ -715,7 +715,7 @@
             <div class="timer1" id="timer">
                 <p><h4>ДО ЗАВЕРШЕНИЯ АКЦИИ:</h4></p>
                 <div class="container1">
-                    <div class="numbers1"><div><span id="days">08</span></div><div class="description1">Дней</div></div>
+                    <div class="numbers1"><div><span id="days"></span></div><div class="description1">Дней</div></div>
                     <div class="numbers1"><div><span id="hours">18</span></div><div class="description1">Часов</div></div>
                     <div class="numbers1"><div><span id="minutes">33</span></div><div class="description1">Минут</div></div>
                     <div class="numbers1"><div><span id="seconds">44</span></div><div class="description1">Секунд</div></div>      
@@ -745,8 +745,7 @@
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6 wow fadeInLeft">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.2618174047184!2d37.602909316080805!3d55.92749898597191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53a0ac32d875f%3A0xe1064c1e68c2b74a!2z0JLRi9GB0YLQsNCy0L7Rh9C90LDRjywgNTMsINCS0LXRiNC60LgsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sIDEyNzU0Mw!5e0!3m2!1sru!2sru!4v1510535523155" width="550" height="450" style="border:0" allowfullscreen></iframe>
-          </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20516.11703518297!2d36.237997547531755!3d50.001708737898284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270bc7047daf05%3A0x52efbe62422b46d6!2z0KLQnCAi0J7QmtCd0JAgLSDQm9CV0J7QnSIg0L_Qu9Cw0YHRgtC40LrQvtCy0YvQtSDQvtC60L3QsCDQpdCw0YDRjNC60L7Qsg!5e0!3m2!1sru!2sua!4v1675455451171!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
           <div class="col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 wow fadeInRight">
             <div class="contacts_info">
               <h3>Юридический адрес:</h3>
@@ -800,7 +799,7 @@
 
     <!-- Modals -->
     <!-- Request a call -->
-    <div class="popup">
+    <div class="popup" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -818,7 +817,7 @@
     </div>
 
     <!-- Request an engineer -->
-    <div class="popup_engineer">
+    <div class="popup_engineer" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_close"><strong>&times;</strong></button>
@@ -836,7 +835,7 @@
     </div>
 
     <!-- Calculator -->
-   <div class="popup_calc">
+   <div class="popup_calc" data-modal>
         <div class="popup_dialog">
             <div class="popup_calc_content text-center">
                 <button type="button" class="popup_calc_close"><strong>&times;</strong></button>
@@ -868,7 +867,7 @@
         </div>
     </div> 
 
-   <div class="popup_calc_profile">
+   <div class="popup_calc_profile" data-modal>
         <div class="popup_dialog">
             <div class="popup_calc_profile_content text-center">
                 <button type="button" class="popup_calc_profile_close"><strong>&times;</strong></button>
@@ -899,12 +898,12 @@
         </div>
     </div> 
 
-    <div class="popup_calc_end">
+    <div class="popup_calc_end" data-modal>
         <div class="popup_dialog">
             <div class="popup_content text-center">
                 <button type="button" class="popup_calc_end_close"><strong>&times;</strong></button>
                 <div class="popup_form">
-                    <form class="form" action="#">
+                    <form class="form" action="#" data-calc="end">
                       <h2>Спасибо за обращение! <br>Оставьте свои данные</h2>
                         <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
                         <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
