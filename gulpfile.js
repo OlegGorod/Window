@@ -54,7 +54,7 @@ gulp.task("copy-assets", () => {
 gulp.task("watch", () => {
     browsersync.init({
 		server: "./dist/",
-		port: 90,
+		port: 4000,
 		notify: true
     });
     

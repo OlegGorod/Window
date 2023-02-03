@@ -5,7 +5,6 @@ const timer = () => {
     const secondsElement = document.querySelector('#seconds');
 
     const deadline = '1 Jan 2025';
-    console.log(seconds)
 
     function runningTimer() {
         const newDate = new Date(deadline);
@@ -16,7 +15,6 @@ const timer = () => {
         let hours = Math.floor((totalSeconds / 60 / 60) % 24)
         let minutes = Math.floor((totalSeconds / 60) % 60)
         let seconds = Math.floor(totalSeconds % 60)
-        console.log(totalSeconds % 60);
 
         if (totalSeconds <= 0) {
             days = 0;

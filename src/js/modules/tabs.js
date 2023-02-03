@@ -23,7 +23,6 @@ const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
 
     header.addEventListener('click', (e) => {
         const target = e.target;
-        console.log(target)
 
         if (target && target.closest(tabSelector)) {
             tab.forEach((item, i) => {
