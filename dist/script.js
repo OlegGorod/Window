@@ -18131,8 +18131,7 @@ var forms = function forms(state) {
         }
       }
 
-      postData('assets/server.php', formData).then(function (res) {
-        console.log(res);
+      postData('assets/server.php', formData).then(function () {
         statusMessage.textContent = message.success;
       }).catch(function () {
         return statusMessage.textContent = message.failure;
